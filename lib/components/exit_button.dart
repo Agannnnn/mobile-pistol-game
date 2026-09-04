@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class ExitButton extends StatefulWidget {
   const new({super.key});
@@ -12,7 +13,7 @@ class _ExitButtonState extends State<ExitButton> {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        debugPrint("======================= EXITING =====================");
+        SystemNavigator.pop();
       },
       child: Container(
         decoration: BoxDecoration(
