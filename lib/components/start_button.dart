@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pistol_game/views/gun.dart';
 
 class StartButton extends StatefulWidget {
   const new({super.key});
@@ -14,7 +15,7 @@ class _StartButtonState extends State<StartButton> {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        debugPrint("======================= STARTING =====================");
+        Navigator.push(context, MaterialPageRoute(builder: (context) => Gun()));
       },
       onTapDown: (details) {
         setState(() {
