@@ -25,7 +25,7 @@ class HomePage extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         image: DecorationImage(
-          image: AssetImage("assets/image/home-background.jpg"),
+          image: AssetImage("assets/image/home_background.jpg"),
           fit: BoxFit.cover,
         ),
       ),
